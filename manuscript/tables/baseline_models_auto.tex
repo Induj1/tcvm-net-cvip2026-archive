@@ -1,0 +1,17 @@
+\begin{table}[t]
+\caption{Clean held-out test performance of trained YOLOv8 helmet baselines.}
+\label{tab:baseline_models_auto}
+\small
+\setlength{\tabcolsep}{3.5pt}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrrrr}
+\toprule
+Model & Epochs & mAP@50 & mAP@50:95 & Precision & Recall & Inference (ms) \\
+\midrule
+YOLOv8n & 50 & 0.628 & 0.415 & 0.610 & 0.617 & 3.025 \\
+YOLOv8s & 50 & 0.634 & 0.417 & 0.957 & 0.593 & 5.908 \\
+AdvAug-YOLOv8n & 44 & 0.623 & 0.404 & 0.610 & 0.586 & 3.473 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

@@ -1,0 +1,17 @@
+\begin{table}[ht]
+\caption{Annotated public-video HELMET pilot on real traffic frames.}
+\label{tab:public_helmet_pilot_auto}
+\small
+\setlength{\tabcolsep}{3pt}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrrrr}
+\toprule
+Setting & Frames & mAP@50 & mAP@50:95 & Anom. F1 & FPR & FPS \\
+\midrule
+Clean public video (YOLOv8n) & 24 & 0.671 & 0.187 & -- & -- & 30.927 \\
+Short-gap occlusion public video (YOLOv8n) & 24 & 0.603 & 0.173 & -- & -- & 9.240 \\
+Short-gap occlusion public video (TCVM-Net) & 24 & 0.631 & 0.179 & 0.750 & 0.095 & 2.251 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

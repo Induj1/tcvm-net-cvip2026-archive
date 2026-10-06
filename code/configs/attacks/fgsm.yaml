@@ -1,0 +1,5 @@
+name: fgsm
+epsilon: 0.031372549
+image_size: 640
+minimize_confidence: true
+target_classes: [0, 1, 2]

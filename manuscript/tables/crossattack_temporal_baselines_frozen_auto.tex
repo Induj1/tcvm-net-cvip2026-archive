@@ -1,0 +1,18 @@
+\begin{table}[tbp]
+\caption{Frozen temporal-baseline transfer on the 20 held-out HELMET clips. Entries are anomaly F1/FPR; no attack-specific threshold tuning is used.}
+\label{tab:crossattack_temporal_baselines}
+\scriptsize
+\centering
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lccc}
+\toprule
+Attack & TCVM-Net & Track recovery & Reference recovery \\
+\midrule
+Occlusion & 0.887/0.021 & 0.318/0.612 & 0.870/0.012 \\
+Reflective & 0.887/0.021 & 0.318/0.612 & 0.839/0.012 \\
+Detector patch & 0.103/0.033 & 0.227/0.693 & 0.088/0.012 \\
+Sticker & 0.000/0.036 & 0.223/0.710 & 0.000/0.012 \\
+Motion blur & 0.000/0.031 & 0.219/0.690 & 0.000/0.012 \\
+\bottomrule
+\end{tabular}
+\end{table}

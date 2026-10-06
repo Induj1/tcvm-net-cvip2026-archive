@@ -1,0 +1,45 @@
+{
+  "sequence_root": "outputs\\tcvm_analysis\\public_helmet_multiclip10_occlusion\\occlusion",
+  "frames": 240,
+  "warmup": 5,
+  "device": "0",
+  "cuda_available": true,
+  "cuda_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "rows": [
+    {
+      "Stage": "YOLOv8 detector only",
+      "Mean ms": 13.705131057848005,
+      "p95 ms": 18.805590004194524,
+      "FPS": 72.96537302555508,
+      "Peak RSS MB": 1163.87109375
+    },
+    {
+      "Stage": "YOLOv8 detector + ROI features",
+      "Mean ms": 26.9076170211539,
+      "p95 ms": 30.768770026043057,
+      "FPS": 37.16419775165643,
+      "Peak RSS MB": 1172.56640625
+    },
+    {
+      "Stage": "IoU tracking association",
+      "Mean ms": 1.672154893860855,
+      "p95 ms": 4.281320062000304,
+      "FPS": 598.0307229141256,
+      "Peak RSS MB": 1172.56640625
+    },
+    {
+      "Stage": "TCVM verification + optical flow",
+      "Mean ms": 378.0320723412281,
+      "p95 ms": 445.83137002773583,
+      "FPS": 2.6452782003569175,
+      "Peak RSS MB": 1172.56640625
+    },
+    {
+      "Stage": "Full YOLOv8 + TCVM pipeline",
+      "Mean ms": 406.66416212569607,
+      "p95 ms": 474.84943001763895,
+      "FPS": 2.459031537898118,
+      "Peak RSS MB": 1172.56640625
+    }
+  ]
+}

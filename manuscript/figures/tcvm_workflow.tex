@@ -1,0 +1,32 @@
+\begin{tikzpicture}[
+    node distance=0.52cm and 0.6cm,
+    block/.style={draw, rounded corners=2pt, align=center, minimum width=2.55cm, minimum height=0.66cm, font=\scriptsize},
+    score/.style={draw, rounded corners=2pt, align=center, minimum width=2.35cm, minimum height=0.55cm, font=\scriptsize, fill=gray!8},
+    decision/.style={draw, diamond, aspect=1.8, align=center, inner sep=1pt, font=\scriptsize},
+    arrow/.style={-{Latex[length=1.8mm]}, thick}
+]
+\node[block] (history) {Stable track history\\$\mathcal{H}_{t-1}^k$};
+\node[block, right=of history] (observe) {Current detection\\$d_t^k$ or miss};
+\node[score, below=of observe, xshift=-1.8cm] (conf) {$s_c$: confidence\\stability};
+\node[score, right=0.22cm of conf] (motion) {$s_m$: motion\\continuity};
+\node[score, right=0.22cm of motion] (feat) {$s_f$: feature\\similarity};
+\node[score, right=0.22cm of feat] (miss) {$s_d$: short-gap\\disappearance};
+\node[block, below=0.58cm of motion, xshift=1.2cm] (score) {$A^k(t)=\sum_i w_i s_i$};
+\node[decision, below=0.5cm of score] (decide) {$A^k(t)\geq\theta$?};
+\node[block, below left=0.55cm and 0.42cm of decide] (accept) {Accept and\\update history};
+\node[block, below right=0.55cm and 0.42cm of decide] (recover) {Reject or recover\\from temporal prior};
+
+\draw[arrow] (history) -- (observe);
+\draw[arrow] (history.south) |- (conf.west);
+\draw[arrow] (observe) -- (conf);
+\draw[arrow] (observe) -- (motion);
+\draw[arrow] (observe) -- (feat);
+\draw[arrow] (observe) -- (miss);
+\draw[arrow] (conf) |- (score);
+\draw[arrow] (motion) -- (score);
+\draw[arrow] (feat) |- (score);
+\draw[arrow] (miss) |- (score);
+\draw[arrow] (score) -- (decide);
+\draw[arrow] (decide) -- node[font=\scriptsize, left] {no} (accept);
+\draw[arrow] (decide) -- node[font=\scriptsize, right] {yes} (recover);
+\end{tikzpicture}

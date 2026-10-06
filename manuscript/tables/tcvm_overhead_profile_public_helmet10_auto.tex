@@ -1,0 +1,19 @@
+\begin{table}[ht]
+\caption{RTX 4060 runtime overhead profile on the public HELMET 10-clip sequence.}
+\label{tab:tcvm_overhead_profile_auto}
+\small
+\setlength{\tabcolsep}{4pt}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrr}
+\toprule
+Stage & Mean ms & p95 ms & FPS & Peak RSS MB \\
+\midrule
+YOLOv8 detector only & 13.705 & 18.806 & 72.965 & 1163.871 \\
+YOLOv8 detector + ROI features & 26.908 & 30.769 & 37.164 & 1172.566 \\
+IoU tracking association & 1.672 & 4.281 & 598.031 & 1172.566 \\
+TCVM verification + optical flow & 378.032 & 445.831 & 2.645 & 1172.566 \\
+Full YOLOv8 + TCVM pipeline & 406.664 & 474.849 & 2.459 & 1172.566 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

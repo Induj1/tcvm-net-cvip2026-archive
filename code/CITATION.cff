@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use TCVM-Net, please cite the paper and repository."
+title: "TCVM-Net: Temporal Consistency Verification for Robust Traffic Surveillance Under Physical-Style Adversarial Attacks"
+authors:
+  - family-names: "Anonymous"
+    given-names: "Authors"
+year: 2026
+conference:
+  name: "Springer LNCS CVIP 2026"
+keywords:
+  - adversarial learning
+  - traffic surveillance
+  - YOLOv8
+  - temporal consistency
+  - physical adversarial attacks
+license: "MIT"
+preferred-citation:
+  type: conference-paper
+  title: "TCVM-Net: Temporal Consistency Verification for Robust Traffic Surveillance Under Physical-Style Adversarial Attacks"
+  authors:
+    - family-names: "Anonymous"
+      given-names: "Authors"
+  conference:
+    name: "Springer LNCS CVIP 2026"
+  year: 2026

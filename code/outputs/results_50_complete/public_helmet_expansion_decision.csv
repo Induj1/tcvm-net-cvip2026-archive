@@ -1,0 +1,6 @@
+"benchmark","clips","frames","objects","clean_map50","attacked_map50","tcvm_map50","anomaly_f1","fpr","fps","promoted_to_paper","note"
+"public_helmet_multiclip20","20","480","4068","0.413112282752991","0.352964609861374","0.354642063379288","0.590673575129534","0.180952380952381","18.1364355301613","yes","stable existing main result"
+"public_helmet_multiclip25","25","600","4828","0.458825200796127","0.390584230422974","0.379631757736206","0.496551724137931","0.272380952380952","24.0980187883954","no","not stable enough to replace 20-clip table"
+"public_helmet_multiclip30","30","720","5577","0.457144170999527","0.387869030237198","0.377206057310104","0.495726495726496","0.276190476190476","22.7092878048204","no","fixed threshold F1/FPR weaker than 20-clip table"
+"public_helmet_multiclip30_calibrated","30","720","5577","0.457144170999527","0.387869030237198","0.393610358238220","0.887096774193548","0.0214285714285714","14.1001891997942","yes","clip-disjoint calibration: theta selected on 10 clips, held out on 20 clips"
+"full_kaggle_archive","","","","","","","","","","no","not feasible: 53.9 GB archive exceeded available disk"

@@ -1,0 +1,11 @@
+flowchart LR
+  A[Input Traffic Surveillance Video] --> B[Frame Extraction Pipeline]
+  B --> C[YOLOv8 Detection Engine]
+  C --> D[Object Tracking Layer: ByteTrack]
+  D --> E[Temporal Consistency Verification Module]
+  E --> F[Adversarial Anomaly Scoring Layer]
+  F --> G[Final Robust Prediction Layer]
+  E --> E1[Confidence Stability]
+  E --> E2[Motion Continuity]
+  E --> E3[Bounding Box Consistency]
+  E --> E4[Inter-frame Feature Similarity]

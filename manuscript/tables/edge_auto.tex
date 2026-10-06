@@ -1,0 +1,16 @@
+\begin{table}[H]
+\caption{Edge deployment latency, throughput, and memory usage.}
+\label{tab:edge_auto}
+\small
+\setlength{\tabcolsep}{3.5pt}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrr}
+\toprule
+Method & Mean Latency (ms) & p95 Latency (ms) & FPS & Peak RSS (MB) \\
+\midrule
+YOLOv8 & 117.776 & 154.312 & 8.491 & 1102.188 \\
+YOLOv8+TCVM-Net & 251.183 & 294.108 & 3.981 & 1120.465 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

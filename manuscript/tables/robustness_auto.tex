@@ -1,0 +1,31 @@
+\begin{table}[t]
+\caption{Robustness on the paired 50-image subset. Base ASR and robust target accuracy (RAcc.) quantify the unmitigated attack and are repeated across methods; mitigation is compared by mAP.}
+\label{tab:robustness_auto}
+\small
+\setlength{\tabcolsep}{3.5pt}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{llrrrr}
+\toprule
+Attack & Method & Base ASR & Base RAcc. & mAP@50 & mAP@50:95 \\
+\midrule
+Clean & YOLOv8 & 0.000 & 1.000 & 0.675 & 0.471 \\
+FGSM & YOLOv8 & 0.473 & 0.527 & 0.337 & 0.166 \\
+FGSM & Image-only & 0.473 & 0.527 & 0.513 & 0.318 \\
+PGD & YOLOv8 & 0.988 & 0.012 & 0.229 & 0.118 \\
+PGD & Image-only & 0.988 & 0.012 & 0.662 & 0.448 \\
+Patch & YOLOv8 & 0.390 & 0.610 & 0.407 & 0.219 \\
+Patch & Image-only & 0.390 & 0.610 & 0.440 & 0.245 \\
+Sticker & YOLOv8 & 0.261 & 0.739 & 0.505 & 0.295 \\
+Sticker & Image-only & 0.261 & 0.739 & 0.566 & 0.341 \\
+Reflective & YOLOv8 & 0.863 & 0.137 & 0.152 & 0.076 \\
+Reflective & Image-only & 0.863 & 0.137 & 0.100 & 0.049 \\
+Motion blur & YOLOv8 & 0.672 & 0.328 & 0.246 & 0.106 \\
+Motion blur & Image-only & 0.672 & 0.328 & 0.283 & 0.125 \\
+Occlusion & YOLOv8 & 0.801 & 0.199 & 0.216 & 0.125 \\
+Occlusion & Image-only & 0.801 & 0.199 & 0.321 & 0.194 \\
+Low light & YOLOv8 & 0.029 & 0.971 & 0.651 & 0.445 \\
+Low light & Image-only & 0.029 & 0.971 & 0.646 & 0.441 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

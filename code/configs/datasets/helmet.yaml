@@ -1,0 +1,8 @@
+path: data/helmet-yolo
+train: images/train
+val: images/val
+test: images/test
+names:
+  0: helmet
+  1: no_helmet
+  2: rider

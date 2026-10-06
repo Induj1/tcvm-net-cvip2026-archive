@@ -1,0 +1,39 @@
+seed: 42
+dataset:
+  name: AdvTraffic-26
+  data_yaml: data/AdvTraffic-26/advtraffic26.yaml
+  target_classes: [0, 1, 2]
+model:
+  backbone: yolov8n
+  weights: runs/train/advtraffic26_yolov8n/weights/best.pt
+  imgsz: 640
+  confidence: 0.25
+  iou: 0.70
+tracking:
+  tracker: bytetrack.yaml
+  fallback_iou_threshold: 0.30
+tcvm:
+  window: 8
+  ema_alpha: 0.35
+  min_history: 3
+  anomaly_threshold: 0.62
+  update_threshold: 0.75
+  confidence_tau: 2.5
+  confidence_sigma_floor: 0.05
+  motion_tau: 0.70
+  feature_tau: 0.45
+  weight_confidence: 0.34
+  weight_motion: 0.28
+  weight_feature: 0.26
+  weight_disappearance: 0.12
+evaluation:
+  metrics:
+    - mAP50
+    - mAP50_95
+    - attack_success_rate
+    - robust_accuracy
+    - anomaly_accuracy
+    - false_positive_rate
+    - fps
+    - latency_ms
+  splits: [test]

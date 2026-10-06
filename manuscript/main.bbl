@@ -1,0 +1,81 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\doi}[1]{https://doi.org/#1}
+
+\bibitem{athalye2018synthesizing}
+Athalye, A., Engstrom, L., Ilyas, A., Kwok, K.: Synthesizing robust adversarial examples. In: Proceedings of the 35th International Conference on Machine Learning. pp. 284--293 (2018)
+
+\bibitem{braunegg2020apricot}
+Braunegg, A., et~al.: {APRICOT}: A dataset of physical adversarial attacks on object detection. In: Computer Vision -- ECCV 2020 Workshops. pp. 35--50. Springer (2020). \doi{10.1007/978-3-030-58589-1_3}
+
+\bibitem{brown2017adversarial}
+Brown, T.B., Man{\'e}, D., Roy, A., Abadi, M., Gilmer, J.: Adversarial patch (2017), arXiv preprint arXiv:1712.09665
+
+\bibitem{chattopadhyay2026patchblock}
+Chattopadhyay, N., Basit, A., Guesmi, A., Hanif, M.A., Ouni, B., Shafique, M.: {PatchBlock}: A lightweight defense against adversarial patches for embedded {EdgeAI} devices. In: 2026 Design, Automation \& Test in Europe Conference. pp.~1--7 (2026). \doi{10.23919/DATE69613.2026.11539297}
+
+\bibitem{eykholt2018robust}
+Eykholt, K., et~al.: Robust physical-world attacks on deep learning visual classification. In: Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. pp. 1625--1634 (2018). \doi{10.1109/CVPR.2018.00175}
+
+\bibitem{gala2025yolopatch}
+Gala, D.L., Molleda, J., Usamentiaga, R.: Evaluating the impact of adversarial patch attacks on {YOLO} models and the implications for edge {AI} security. International Journal of Information Security  \textbf{24}, ~154 (2025). \doi{10.1007/s10207-025-01067-3}
+
+\bibitem{goodfellow2015explaining}
+Goodfellow, I.J., Shlens, J., Szegedy, C.: Explaining and harnessing adversarial examples. In: International Conference on Learning Representations (2015)
+
+\bibitem{han2024themis}
+Han, H., et~al.: Real-time robust video object detection system against physical-world adversarial attacks. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems  \textbf{43}(1),  366--379 (2024). \doi{10.1109/TCAD.2023.3305932}
+
+\bibitem{hingun2023reap}
+Hingun, N., Sitawarin, C., Li, J., Wagner, D.: {REAP}: A large-scale realistic adversarial patch benchmark. In: Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV). pp. 4640--4651 (October 2023)
+
+\bibitem{jacob2025structured}
+Jacob, S., Shao, W., Kasneci, G.: Structured universal adversarial attacks on object detection for video sequences. In: Pattern Recognition -- 47th DAGM German Conference, DAGM GCPR 2025, Proceedings. pp. 171--185. Springer (2026). \doi{10.1007/978-3-032-12840-9_12}
+
+\bibitem{jocher2023ultralytics}
+Jocher, G., Chaurasia, A., Qiu, J.: Ultralytics {YOLOv8} (2023), \url{https://github.com/ultralytics/ultralytics}
+
+\bibitem{li2025pbcat}
+Li, X., et~al.: {PBCAT}: Patch-based composite adversarial training against physically realizable attacks on object detection. In: Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV). pp. 24456--24466 (October 2025)
+
+\bibitem{long2024papmot}
+Long, J., et~al.: {PapMOT}: Exploring adversarial patch attack against multiple object tracking. In: Computer Vision -- ECCV 2024. pp. 128--144. Springer (2024). \doi{10.1007/978-3-031-72983-6_8}
+
+\bibitem{madry2018towards}
+Madry, A., Makelov, A., Schmidt, L., Tsipras, D., Vladu, A.: Towards deep learning models resistant to adversarial attacks. In: International Conference on Learning Representations (2018)
+
+\bibitem{mu2025adav}
+Mu, J.: Practitioner paper: A real-time defense against object vanishing adversarial patch attacks for object detection in autonomous vehicles. In: Security and Privacy in Cyber-Physical Systems and Smart Vehicles. pp. 296--307. Springer (2025). \doi{10.1007/978-3-031-93354-7_14}
+
+\bibitem{pavlitska2025foolstoplight}
+Pavlitska, S., Robb, J., Polley, N., Yazgan, M., Z{\"o}llner, J.M.: Fool the stoplight: Realistic adversarial patch attacks on traffic light detectors. In: 2025 IEEE Intelligent Vehicles Symposium. pp. 734--741 (2025). \doi{10.1109/IV64158.2025.11097778}
+
+\bibitem{selvaraju2017grad}
+Selvaraju, R.R., Cogswell, M., Das, A., Vedantam, R., Parikh, D., Batra, D.: {Grad-CAM}: Visual explanations from deep networks via gradient-based localization. In: Proceedings of the IEEE International Conference on Computer Vision. pp. 618--626 (2017). \doi{10.1109/ICCV.2017.74}
+
+\bibitem{suo2026rdpa}
+Suo, H., Zhang, Q., Gu, S., Chen, H.: {RDPA}: A concealed and perilous physical adversarial attack for nighttime traffic signs recognition. Expert Systems with Applications  \textbf{327},  132647 (2026). \doi{10.1016/j.eswa.2026.132647}
+
+\bibitem{wei2026physical}
+Wei, X., Pu, B., Zhao, S., Lu, J., Wu, B.: Visual adversarial attacks and defenses in the physical world: A survey. ACM Computing Surveys  \textbf{58}(10),  1--36 (2026). \doi{10.1145/3793659}
+
+\bibitem{xiao2019advit}
+Xiao, C., et~al.: {AdvIT}: Adversarial frames identifier based on temporal consistency in videos. In: Proceedings of the IEEE/CVF International Conference on Computer Vision. pp. 3967--3976 (2019). \doi{10.1109/ICCV.2019.00407}
+
+\bibitem{xu2026naradv}
+Xu, Y., Xie, F., Lyu, C., Liu, J., Ji, Y., Shiratori, N.: {NarAdv}: Natural-style physical adversarial attack on traffic sign detection for autonomous vehicles. IEEE Transactions on Dependable and Secure Computing  \textbf{23}(2),  2303--2319 (2026). \doi{10.1109/TDSC.2025.3626196}
+
+\bibitem{yankelev2026antistyler}
+Yankelev, I., et~al.: {AntiStyler}: Defending object detection models against adversarial patch attacks using style removal. In: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR). pp. 27936--27945 (June 2026)
+
+\bibitem{yu2020bdd100k}
+Yu, F., et~al.: {BDD100K}: A diverse driving dataset for heterogeneous multitask learning. In: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR). pp. 2633--2642 (June 2020)
+
+\bibitem{zhang2022bytetrack}
+Zhang, Y., et~al.: {ByteTrack}: Multi-object tracking by associating every detection box. In: Computer Vision -- ECCV 2022. pp. 1--21. Springer (2022). \doi{10.1007/978-3-031-20047-2_1}
+
+\bibitem{zheng2025revisiting}
+Zheng, J., et~al.: Revisiting adversarial patch defenses on object detectors: Unified evaluation, large-scale dataset, and new insights. In: Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV). pp. 23476--23486 (October 2025)
+
+\end{thebibliography}

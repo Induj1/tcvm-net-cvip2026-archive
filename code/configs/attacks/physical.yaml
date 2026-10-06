@@ -1,0 +1,19 @@
+patch:
+  patch_size: 96
+  scale: 0.45
+  alpha: 0.95
+  vertical_offset: -0.18
+sticker:
+  scale: 0.38
+reflective:
+  intensity: 0.82
+  stripe_width: 8
+  scale: 0.90
+occlusion:
+  occlusion_ratio: 0.35
+motion_blur:
+  kernel_size: 17
+  angle: 0.0
+low_light:
+  gamma: 1.8
+  gain: 0.72

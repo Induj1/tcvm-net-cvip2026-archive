@@ -1,0 +1,17 @@
+\begin{table}[ht]
+\caption{All-clip public HELMET benchmark after clip-disjoint TCVM-Net threshold calibration on 10 of 30 annotated clips.}
+\label{tab:public_helmet_multiclip30_calibrated_auto}
+\small
+\setlength{\tabcolsep}{3pt}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrrrr}
+\toprule
+Setting & Frames & mAP@50 & mAP@50:95 & Anom. F1 & FPR & FPS \\
+\midrule
+Clean public video (YOLOv8n) & 720 & 0.457 & 0.106 & -- & -- & 42.357 \\
+Occlusion public video (YOLOv8n) & 720 & 0.388 & 0.090 & -- & -- & 45.745 \\
+Occlusion public video (TCVM-Net) & 720 & 0.394 & 0.091 & 0.891 & 0.019 & 14.100 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

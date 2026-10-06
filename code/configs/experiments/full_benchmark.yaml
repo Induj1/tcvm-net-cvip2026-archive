@@ -1,0 +1,43 @@
+seed: 42
+paths:
+  bdd_source: data/source/bdd100k
+  helmet_source: data/source/helmet
+  bdd_yolo: data/bdd100k-yolo
+  helmet_yolo: data/helmet-yolo
+  advtraffic26: data/AdvTraffic-26
+  baseline_output: outputs/baselines
+  attacks_output: outputs/attacks
+  results_output: outputs/results
+  figures_output: outputs/figures
+models:
+  helmet:
+    data: data/helmet-yolo/helmet.yaml
+    model: yolov8n.pt
+    name: helmet_yolov8n
+    epochs: 100
+    imgsz: 640
+    batch: 16
+  rider:
+    data: data/bdd100k-yolo/bdd100k.yaml
+    model: yolov8n.pt
+    name: rider_yolov8n
+    epochs: 100
+    imgsz: 640
+    batch: 16
+  advtraffic:
+    data: data/AdvTraffic-26/advtraffic26.yaml
+    model: yolov8n.pt
+    name: advtraffic26_yolov8n
+    epochs: 100
+    imgsz: 640
+    batch: 16
+attacks:
+  split: test
+  target_classes: [0, 1, 2]
+  epsilon_values: [0.007843137, 0.015686275, 0.031372549]
+  names: [fgsm, pgd, patch, sticker, reflective, motion_blur, occlusion, low_light]
+tcvm:
+  anomaly_threshold: 0.62
+  window: 8
+  ema_alpha: 0.35
+  use_optical_flow: true

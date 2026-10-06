@@ -1,0 +1,15 @@
+\begin{table}[t]
+\centering
+\caption{Real-video reflective stress test using clean YOLOv8 pseudo-labels rather than human annotations.}
+\label{tab:real_video_auto}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrrrr}
+\toprule
+Method & $\theta$ & mAP@50 & mAP@50:95 & Anom. Acc. & FPS \\
+\midrule
+YOLOv8 baseline & \multicolumn{1}{c}{n/a} & 0.432 & 0.407 & \multicolumn{1}{c}{n/a} & \multicolumn{1}{c}{n/a} \\
+YOLOv8+\method{} & 0.45 & 0.522 & 0.512 & 0.713 & 13.73 \\
+\bottomrule
+\end{tabular}
+\end{table}

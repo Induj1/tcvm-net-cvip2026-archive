@@ -1,0 +1,18 @@
+\begin{table}[ht]
+\caption{TCVM optical-flow speed and anomaly-detection tradeoff on the public HELMET 10-clip benchmark.}
+\label{tab:tcvm_speed_modes_auto}
+\small
+\setlength{\tabcolsep}{3.5pt}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{llrrrrr}
+\toprule
+Mode & Flow Scale & mAP@50 & mAP@50:95 & Anom. F1 & FPR & FPS \\
+\midrule
+Full TCVM & 1.00 & 0.374 & 0.080 & 0.583 & 0.205 & 2.679 \\
+Scaled-flow TCVM (0.50) & 0.50 & 0.373 & 0.080 & 0.556 & 0.229 & 5.126 \\
+Scaled-flow TCVM (0.25) & 0.25 & 0.370 & 0.079 & 0.522 & 0.262 & 13.480 \\
+Fast TCVM & none & 0.359 & 0.077 & 0.420 & 0.395 & 32.208 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

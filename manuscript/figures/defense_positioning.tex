@@ -1,0 +1,25 @@
+\begin{tikzpicture}[
+    node distance=0.48cm,
+    family/.style={draw, rounded corners=2pt, align=center, minimum width=3.2cm, minimum height=0.75cm, font=\scriptsize},
+    signal/.style={draw, rounded corners=2pt, align=center, minimum width=2.9cm, minimum height=0.58cm, font=\scriptsize, fill=gray!8},
+    arrow/.style={-{Latex[length=1.8mm]}, thick}
+]
+\node[family] (image) {Image-only\\preprocessing};
+\node[family, right=0.52cm of image] (train) {Adversarial\\augmentation};
+\node[family, right=0.52cm of train, fill=gray!10] (tcvm) {\method{}\\temporal verification};
+
+\node[signal, below=of image] (image_sig) {Single-frame\\input statistics};
+\node[signal, below=of train] (train_sig) {Seen synthetic\\attack families};
+\node[signal, below=of tcvm] (tcvm_sig) {Track-level\\temporal consistency};
+
+\node[signal, below=0.42cm of image_sig] (image_out) {May denoise or\\damage evidence};
+\node[signal, below=0.42cm of train_sig] (train_out) {Improves matched\\training attacks};
+\node[signal, below=0.42cm of tcvm_sig] (tcvm_out) {Flags abrupt drops,\\jumps, disappearance};
+
+\draw[arrow] (image) -- (image_sig);
+\draw[arrow] (train) -- (train_sig);
+\draw[arrow] (tcvm) -- (tcvm_sig);
+\draw[arrow] (image_sig) -- (image_out);
+\draw[arrow] (train_sig) -- (train_out);
+\draw[arrow] (tcvm_sig) -- (tcvm_out);
+\end{tikzpicture}

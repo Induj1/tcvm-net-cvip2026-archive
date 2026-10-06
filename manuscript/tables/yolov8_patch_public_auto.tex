@@ -1,0 +1,17 @@
+\begin{table}[ht]
+\caption{Detector-specific YOLOv8 digital patch pilot on the public HELMET multi-clip sequence.}
+\label{tab:yolov8_patch_public_auto}
+\small
+\setlength{\tabcolsep}{3pt}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrrrrr}
+\toprule
+Setting & Frames & mAP@50 & mAP@50:95 & ASR & Anom. R & Anom. F1 & FPS \\
+\midrule
+Clean public video (YOLOv8n) & 120 & 0.440 & 0.094 & -- & -- & -- & 29.395 \\
+YOLOv8-specific digital patch & 120 & 0.279 & 0.087 & 0.371 & -- & -- & 32.239 \\
+YOLOv8-specific patch + TCVM & 120 & 0.272 & 0.086 & -- & 0.108 & 0.195 & 2.369 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

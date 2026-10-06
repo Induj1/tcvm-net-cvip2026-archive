@@ -1,0 +1,23 @@
+\begin{table}[t]
+\caption{Adversarial augmentation on the paired 50-image attack splits; entries are mAP.}
+\label{tab:adversarial_training_auto}
+\small
+\setlength{\tabcolsep}{3.5pt}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrrr}
+\toprule
+Attack & Base @50 & AdvAug @50 & $\Delta$ @50 & Base @50:95 & AdvAug @50:95 \\
+\midrule
+Clean & 0.675 & 0.699 & 0.023 & 0.471 & 0.464 \\
+FGSM & 0.337 & 0.420 & 0.084 & 0.166 & 0.223 \\
+PGD & 0.229 & 0.540 & 0.311 & 0.118 & 0.335 \\
+Patch & 0.407 & 0.963 & 0.557 & 0.219 & 0.741 \\
+Sticker & 0.505 & 0.958 & 0.453 & 0.295 & 0.734 \\
+Reflective & 0.152 & 0.910 & 0.759 & 0.076 & 0.782 \\
+Motion blur & 0.246 & 0.572 & 0.326 & 0.106 & 0.348 \\
+Occlusion & 0.216 & 0.918 & 0.702 & 0.125 & 0.710 \\
+Low light & 0.651 & 0.655 & 0.004 & 0.445 & 0.442 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

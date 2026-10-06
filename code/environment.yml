@@ -1,0 +1,30 @@
+name: tcvm-net
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - pip
+  - numpy
+  - pandas
+  - matplotlib
+  - pillow
+  - opencv
+  - pyyaml
+  - tqdm
+  - scikit-learn
+  - pip:
+      - ultralytics
+      - torchmetrics
+      - adversarial-robustness-toolbox
+      - foolbox
+      - kaggle
+      - grad-cam
+      - filterpy
+      - psutil
+      - seaborn
+      - reportlab
+      - pypdf
+      - pymupdf

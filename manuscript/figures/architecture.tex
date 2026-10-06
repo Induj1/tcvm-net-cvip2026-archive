@@ -1,0 +1,72 @@
+\begin{tikzpicture}[
+    font=\sffamily,
+    main/.style={
+        draw=black,
+        rounded corners=2pt,
+        line width=0.6pt,
+        align=center,
+        minimum width=2.18cm,
+        minimum height=0.78cm,
+        inner sep=3pt,
+        font=\small
+    },
+    cue/.style={
+        draw=black!80,
+        rounded corners=2pt,
+        line width=0.5pt,
+        align=center,
+        minimum width=2.72cm,
+        minimum height=0.58cm,
+        inner sep=2pt,
+        font=\footnotesize,
+        fill=white
+    },
+    group/.style={
+        draw=black!85,
+        rounded corners=3pt,
+        line width=0.6pt,
+        fill=gray!4
+    },
+    title/.style={font=\bfseries\small},
+    arrow/.style={-{Latex[length=2.2mm]}, line width=0.62pt},
+    softarrow/.style={-{Latex[length=2mm]}, line width=0.5pt, draw=black!75}
+]
+
+% Top row: detector and tracker.
+\node[main, fill=gray!10] (video) at (0,0)
+    {Traffic\\video};
+\node[main, fill=orange!12, minimum width=2.45cm] (yolo) at (2.85,0)
+    {YOLOv8\\detections};
+\node[main, fill=green!10, minimum width=2.45cm] (track) at (5.70,0)
+    {ByteTrack\\tracklets};
+
+\draw[arrow] (video) -- (yolo);
+\draw[arrow] (yolo) -- (track);
+
+% Bottom row: TCVM internals and decision.
+\node[group, minimum width=7.05cm, minimum height=2.65cm, anchor=north west]
+    (box) at (-1.10,-1.05) {};
+\node[title, anchor=north west] at ([xshift=0.14cm,yshift=-0.13cm]box.north west)
+    {TCVM-Net temporal verification};
+
+\node[cue] (conf) at (0.66,-1.82) {Confidence stability};
+\node[cue] (motion) at (3.98,-1.82) {Motion / box continuity};
+\node[cue] (feat) at (0.66,-2.72) {Feature similarity};
+\node[cue] (drop) at (3.98,-2.72) {Disappearance gate};
+
+\node[main, fill=blue!8, minimum width=2.15cm] (score) at (7.35,-2.27)
+    {Anomaly\\score $A^k(t)$};
+\node[main, fill=gray!10, minimum width=2.22cm] (out) at (9.85,-2.27)
+    {Robust\\prediction};
+
+\draw[arrow] (track.south) |- ([xshift=0.05cm]box.north);
+\draw[softarrow] (conf.east) -- (motion.west);
+\draw[softarrow] (feat.east) -- (drop.west);
+\draw[softarrow] (conf.south) |- (score.west);
+\draw[softarrow] (motion.south) |- (score.west);
+\draw[softarrow] (feat.north) |- (score.west);
+\draw[softarrow] (drop.north) |- (score.west);
+\draw[arrow] (box.east) -- (score.west);
+\draw[arrow] (score) -- (out);
+
+\end{tikzpicture}

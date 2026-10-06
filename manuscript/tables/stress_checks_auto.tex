@@ -1,0 +1,15 @@
+\begin{table}[tbp]
+\caption{Additional reference-recovery and throughput stress checks.}
+\label{tab:stress_checks_auto}
+\scriptsize
+\setlength{\tabcolsep}{2.5pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabular}{L{0.13\linewidth}L{0.17\linewidth}L{0.22\linewidth}L{0.25\linewidth}L{0.14\linewidth}}
+\toprule
+Check & Setting & Primary result & Secondary result & Boundary \\
+\midrule
+ADAV ref. & recovery $\theta=0.85$ & F1 $0.938$, recall $0.883$ & FPR $0.000$; mAP@50 $0.368$ & disp. only \\
+Speed & flow ablation & FPS range $2.68$--$32.21$ & F1 range $0.420$--$0.583$ & tunable cost \\
+\bottomrule
+\end{tabular}
+\end{table}
